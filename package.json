@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "score-engine",
+  "type": "module",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "husky",
+    "prettify": "prettier --write .",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage"
+  },
+  "author": "Jhonny Moreira <jobs at jhonny dot codes>",
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/node": "^20.12.11",
+    "@types/prompts": "^2.4.9",
+    "@vitest/coverage-v8": "^1.6.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "tsx": "^4.10.2",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.8.0",
+    "vite-tsconfig-paths": "^4.3.2"
+  }
+}
