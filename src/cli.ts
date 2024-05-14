@@ -18,13 +18,25 @@ export async function cli(args: string[]) {
         'renda-mensal': {
           type: 'string',
         },
+        help: {
+          type: 'boolean',
+          short: 'h',
+        },
       },
     });
+
+    if (values.help) {
+      return showHelp();
+    }
 
     const inputValidation = schema.safeParse(values);
 
     if (!inputValidation.success) {
-      return showHelp();
+      const formattedErrors = Object.values(
+        inputValidation.error.flatten().fieldErrors
+      );
+
+      return `${formattedErrors.join('\n')}\n---\n${showHelp()}`;
     }
 
     const { age, city, monthlyIncome } = mapper(inputValidation.data);
