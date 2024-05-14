@@ -68,7 +68,7 @@ describe('cli', () => {
         Sua renda mensal deve ser um número em reais.
         ---
         USO:
-          score-engine --cidade <cidade> --idade <idade> --renda-mensal <renda-mensal>
+          @score-engine/cli --cidade <cidade> --idade <idade> --renda-mensal <renda-mensal>
 
         PARÂMETROS:
           --cidade <cidade> - Sua cidade atual. (Somente letras e espaços)

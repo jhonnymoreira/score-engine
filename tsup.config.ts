@@ -8,5 +8,5 @@ export default defineConfig({
   minify: true,
   outDir: 'dist',
   platform: 'node',
-  target: 'node18',
+  target: 'node20',
 });
