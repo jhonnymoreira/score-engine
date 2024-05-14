@@ -12,12 +12,12 @@ beforeEach(() => {
 });
 
 describe('cli', () => {
-  describe('when the --help (or -h) flag is provided', () => {
+  describe('when the --ajude (or -a) flag is provided', () => {
     test('shows the help message', async () => {
-      const message = await cli(['--help']);
+      const message = await cli(['--ajuda']);
       expect(message).toStrictEqual(showHelp());
 
-      const message2 = await cli(['-h']);
+      const message2 = await cli(['-a']);
       expect(message2).toStrictEqual(showHelp());
     });
   });

@@ -18,14 +18,14 @@ export async function cli(args: string[]) {
         'renda-mensal': {
           type: 'string',
         },
-        help: {
+        ajuda: {
           type: 'boolean',
-          short: 'h',
+          short: 'a',
         },
       },
     });
 
-    if (values.help) {
+    if (values.ajuda) {
       return showHelp();
     }
 
