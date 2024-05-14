@@ -1,8 +1,10 @@
 .git/
 .husky/
 coverage/
+dist/
 node_modules/
 
 *.md
+*.tgz
 .env*
 .gitignore
