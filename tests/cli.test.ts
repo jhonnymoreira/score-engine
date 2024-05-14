@@ -12,12 +12,12 @@ beforeEach(() => {
 });
 
 describe('cli', () => {
-  describe('when the --help (or -h) flag is provided', () => {
+  describe('when the --ajude (or -a) flag is provided', () => {
     test('shows the help message', async () => {
-      const message = await cli(['--help']);
+      const message = await cli(['--ajuda']);
       expect(message).toStrictEqual(showHelp());
 
-      const message2 = await cli(['-h']);
+      const message2 = await cli(['-a']);
       expect(message2).toStrictEqual(showHelp());
     });
   });
@@ -68,7 +68,7 @@ describe('cli', () => {
         Sua renda mensal deve ser um número em reais.
         ---
         USO:
-          score-engine --cidade <cidade> --idade <idade> --renda-mensal <renda-mensal>
+          @score-engine/cli --cidade <cidade> --idade <idade> --renda-mensal <renda-mensal>
 
         PARÂMETROS:
           --cidade <cidade> - Sua cidade atual. (Somente letras e espaços)

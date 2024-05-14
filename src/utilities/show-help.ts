@@ -5,7 +5,7 @@ const { schema } = cliInputSchema;
 export const showHelp = () =>
   `
 USO:
-  score-engine --cidade <cidade> --idade <idade> --renda-mensal <renda-mensal>
+  @score-engine/cli --cidade <cidade> --idade <idade> --renda-mensal <renda-mensal>
 
 PARÂMETROS:
   --cidade <cidade> - ${schema.shape.cidade.description}

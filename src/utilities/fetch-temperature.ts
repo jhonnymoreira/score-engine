@@ -13,7 +13,9 @@ export async function fetchTemperature(city: string) {
     .safeParse(process.env);
 
   if (!environmentValidation.success) {
-    throw new Error('Missing "OPENWEATHER_API_KEY" environment variable');
+    throw new Error(
+      'Está faltando a variável de ambiente "OPENWEATHER_API_KEY".'
+    );
   }
 
   const endpoint = new URL(OPENWEATHER_ENDPOINT);

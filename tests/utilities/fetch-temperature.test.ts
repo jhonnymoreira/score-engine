@@ -25,7 +25,7 @@ describe('fetchTemperature', () => {
       delete process.env['OPENWEATHER_API_KEY'];
 
       await expect(fetchTemperature('São Carlos')).rejects.toThrow(
-        'Missing "OPENWEATHER_API_KEY" environment variable'
+        'Está faltando a variável de ambiente "OPENWEATHER_API_KEY".'
       );
     });
   });
